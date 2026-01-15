@@ -5,22 +5,27 @@
    ========================================================== */
 
 :root{
-  --bg0:#060a07;
-  --bg1:#0b120d;
+  /* BACKGROUNDS */
+  --bg0:#f7f9f6;          /* was #060a07 */
+  --bg1:#ffffff;          /* was #0b120d */
 
-  --panel: rgba(255,255,255,.06);
-  --panel2: rgba(255,255,255,.08);
-  --line: rgba(255,255,255,.12);
+  /* PANELS */
+  --panel: rgba(0,0,0,.04);
+  --panel2: rgba(0,0,0,.06);
+  --line: rgba(0,0,0,.10);
 
-  --text: rgba(255,255,255,.93);
-  --muted: rgba(255,255,255,.72);
+  /* TEXT */
+  --text: rgba(10,14,12,.92);
+  --muted: rgba(10,14,12,.62);
 
+  /* BRAND COLORS — unchanged */
   --brand:#33c46a;
   --brand2:#20a65a;
   --gold:#f6c76a;
 
-  --shadow: 0 22px 60px rgba(0,0,0,.48);
-  --shadow2: 0 12px 32px rgba(0,0,0,.34);
+  /* SHADOWS — flipped lighter */
+  --shadow: 0 22px 60px rgba(0,0,0,.12);
+  --shadow2: 0 12px 32px rgba(0,0,0,.10);
 
   --r-xl: 28px;
   --r-lg: 20px;
