@@ -554,3 +554,9 @@ input:focus, textarea:focus, select:focus{
     min-height: 42px;
   }
 }
+/* INDEX HERO – reduce pill clutter on mobile */
+@media (max-width: 640px){
+  .hero .pill{
+    display: none;
+  }
+}
