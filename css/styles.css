@@ -310,11 +310,16 @@ h1{
   display:flex; justify-content:space-between; gap: 12px;
   padding: 12px 12px;
   border-radius: 16px;
-  border: 1px solid rgba(255,255,255,.10);
-  background: rgba(255,255,255,.04);
+  border: 1px solid var(--line);
+background: var(--panel);
 }
-.meta-row strong{ font-size:.98rem; }
-.meta-row span{ color: var(--muted); font-size:.95rem; }
+.meta-row strong{
+  color: var(--text);
+}
+
+.meta-row span{
+  color: var(--muted);
+}
 
 .hero-actions{ display:flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
 
@@ -582,5 +587,21 @@ input:focus, textarea:focus, select:focus{
 
   .brand-text span{
     display: none;
+  }
+}
+/* TOPBAR – prevent overlap with CTA on very small screens */
+@media (max-width: 420px){
+
+  .nav-actions .btn-primary{
+    padding: 10px 12px;
+    font-size: .9rem;
+  }
+
+  .brand img{
+    height: 36px;
+  }
+
+  .brand-text strong{
+    font-size: .95rem;
   }
 }
