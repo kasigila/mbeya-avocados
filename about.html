@@ -3,208 +3,334 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Mbeya Avocados</title>
-  <meta name="description" content="Learn Mbeya Avocados’ story: rooted in Rungwe, Mbeya, connecting sustainable avocado farming to global markets." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>About Mbeya Avocados | Premium Avocados from Tanzania</title>
+  <meta name="description" content="Learn about Mbeya Avocados—our origin in Rungwe, Mbeya, our farmer partnerships, and our premium, sustainability-led approach to avocado farming and sourcing." />
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Mbeya Avocados">
+  <meta property="og:description" content="Premium avocados from Tanzania—built on farmer partnerships, quality, and sustainability.">
+  <meta property="og:image" content="mbeya-avocados-assets/Avo-1-Custom-min.jpg">
+
+  <link rel="icon" href="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-
-<body id="top">
+<body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="topbar" role="region" aria-label="Announcement">
-    <div class="container topbar__inner">
-      <div class="topbar__left">
-        <span class="chip chip--soft"><span class="chip__dot" aria-hidden="true"></span>Karibu — Our story</span>
-        <span class="topbar__note">Rungwe, Mbeya • Tanzania</span>
-      </div>
-      <div class="topbar__right">
-        <a class="topbar__link" href="contact.html">Contact <span aria-hidden="true">→</span></a>
-      </div>
-    </div>
-  </div>
-
-  <header class="header">
-    <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="Mbeya Avocados home">
-        <img class="brand__logo" src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo" />
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Mbeya Avocados Home">
+        <img src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo">
+        <div class="brand-text">
+          <strong>Mbeya Avocados</strong>
+          <span>Growing the perfect avocados</span>
+        </div>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel">
-          <span class="nav__toggleLines" aria-hidden="true"></span>
-        </button>
-
-        <div class="nav__panel" id="navPanel">
-          <ul class="nav__list">
-            <li><a class="nav__link" href="index.html">Home</a></li>
-
-            <li class="nav__dropdown">
-              <button class="nav__link nav__linkBtn" type="button" aria-expanded="false">
-                About <span class="nav__chev" aria-hidden="true">▾</span>
-              </button>
-              <div class="nav__menu" role="menu">
-                <a role="menuitem" class="nav__menuLink is-active" href="about.html">About Mbeya Avocados</a>
-                <a role="menuitem" class="nav__menuLink" href="initiatives.html">Green Climate Initiatives</a>
-                <a role="menuitem" class="nav__menuLink" href="practices.html">Good Agricultural Practices</a>
-              </div>
-            </li>
-
-            <li><a class="nav__link" href="contact.html">Contact</a></li>
-          </ul>
-
-          <div class="nav__ctaRow">
-            <a class="btn btn--ghost" href="initiatives.html">Sustainability</a>
-            <a class="btn btn--primary" href="contact.html">Work With Us</a>
-          </div>
-        </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="initiatives.html">Green Initiatives</a>
+        <a href="practices.html">Good Practices</a>
+        <a href="contact.html">Contact</a>
       </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-small btn-ghost" href="contact.html">Get in touch</a>
+        <button class="menu-btn" type="button" aria-label="Open menu" data-open-drawer>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
+  <!-- Mobile drawer -->
+  <div class="drawer-backdrop" data-backdrop></div>
+  <aside class="drawer" data-drawer aria-label="Mobile menu">
+    <div class="drawer-header">
+      <strong>Menu</strong>
+      <button class="btn btn-small" type="button" data-close-drawer>Close</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="initiatives.html">Green Initiatives</a>
+      <a href="practices.html">Good Practices</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="pill">Rungwe, Mbeya • Tanzania</div>
+    </div>
+  </aside>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Avocado farm background"></div>
+    <div class="container hero-inner">
+      <div class="reveal">
+        <div class="kicker"><span class="dot"></span> About us</div>
+        <h1>Premium avocados, sourced with integrity.</h1>
+        <p class="lead">
+          Mbeya Avocados is rooted in the Southern Highlands of Tanzania—bringing together growers, sustainable practices,
+          and quality-first handling to deliver avocados people trust.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Talk to us</a>
+          <a class="btn" href="initiatives.html">Our sustainability plan</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="thumb">
+          <img src="mbeya-avocados-assets/Avo-3-Custom-min-1.jpg" alt="Premium avocados" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="meta-row">
+            <strong>Where we operate</strong>
+            <span>Rungwe, Mbeya</span>
+          </div>
+          <div class="meta-row">
+            <strong>What we focus on</strong>
+            <span>Quality • Traceability • Sustainability</span>
+          </div>
+          <div class="meta-row">
+            <strong>Partnership model</strong>
+            <span>Supporting smallholder farmers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main id="main">
-    <section class="pageHero">
-      <div class="container pageHero__grid">
-        <div class="pageHero__copy reveal">
-          <p class="eyebrow">About Mbeya Avocados</p>
-          <h1 class="h1">Rooted in Mbeya. Built for global markets.</h1>
-          <p class="lead">
-            Mbeya Avocados is a green business focused on environmental sustainability, economic sustainability,
-            and social sustainability—while connecting growers to international demand.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="contact.html">Partner with us</a>
-            <a class="btn btn--soft" href="initiatives.html">See our initiatives</a>
+    <!-- Values / story -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>What makes Mbeya Avocados different</h2>
+            <p>Not just great fruit—an end-to-end approach that builds confidence for customers and partners.</p>
           </div>
         </div>
 
-        <div class="pageHero__media reveal">
-          <div class="heroCard">
-            <img class="heroCard__img" src="mbeya-avocados-assets/avo-growers.png" alt="Avocado growers in Mbeya region" />
-            <div class="heroCard__overlay"></div>
-            <div class="heroCard__bottom">
-              <p class="heroCard__title">Farmer-first</p>
-              <p class="heroCard__sub">We grow opportunity with growers.</p>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.5 7-10a7 7 0 10-14 0c0 5.5 7 10 7 10z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 12a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Origin you can trust</h3>
+            <p>From the fertile slopes near Mount Rungwe, Mbeya—ideal conditions for premium avocados.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 20V7a2 2 0 012-2h12a2 2 0 012 2v13" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M9 3v4M15 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Quality-first handling</h3>
+            <p>Careful sorting, clean handling, and consistency—so every shipment meets expectations.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l3 7 7 .5-5.5 4.2 2 7.3L12 17l-6.5 4 2-7.3L2 9.5 9 9l3-7z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Impact-driven growth</h3>
+            <p>We invest in farmer relationships and climate-smart methods that protect the land for the long term.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media + mission -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="grid grid-2">
+          <div class="media-card reveal">
+            <div class="media" style="background-image:url('mbeya-avocados-assets/avo-growers.png');"></div>
+            <div class="body">
+              <h3>Our mission</h3>
+              <p>
+                Connect growers in Mbeya to reliable markets—while maintaining premium quality and supporting sustainable farming.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>How we work</h3>
+            <div class="hr"></div>
+            <div class="list">
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Partner with growers</strong>
+                  <span>We support farmers with guidance, reliability, and consistent standards.</span>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Handle responsibly</strong>
+                  <span>Careful picking, sorting and packing to reduce waste and maintain freshness.</span>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M3 12h7l2 3 2-6 2 6 2-3h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Grow sustainably</strong>
+                  <span>Climate initiatives and good agricultural practices drive long-term quality.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-actions" style="margin-top:16px;">
+              <a class="btn btn-primary" href="practices.html">Good Agricultural Practices</a>
+              <a class="btn" href="initiatives.html">Green Initiatives</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- CTA -->
+    <section class="section-sm">
       <div class="container">
-        <div class="cards3">
-          <article class="card reveal">
-            <h3 class="h3">Why Mbeya?</h3>
-            <p class="muted">
-              The Southern Highlands offer strong conditions for avocado growth—supporting consistent quality and supply.
-            </p>
-          </article>
-          <article class="card reveal">
-            <h3 class="h3">Our role</h3>
-            <p class="muted">
-              We organize procurement, quality alignment, and buyer-ready communication—so partnerships move fast.
-            </p>
-          </article>
-          <article class="card reveal">
-            <h3 class="h3">Our promise</h3>
-            <p class="muted">
-              Clear expectations, honest timelines, and a brand story buyers can stand behind.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--flush">
-      <div class="container">
-        <div class="split reveal">
-          <div class="split__media">
-            <img class="roundedImg" src="mbeya-avocados-assets/Avo-1-Custom-min.jpg" alt="Avocados close-up" />
+        <div class="media-card reveal">
+          <div class="media" style="background-image:url('mbeya-avocados-assets/Tukuyu-Avocados-tree-min.jpg'); height: 320px;"></div>
+          <div class="body" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+            <div>
+              <h3 style="margin:0 0 6px;">Want to work with Mbeya Avocados?</h3>
+              <p style="margin:0; color:rgba(255,255,255,.72);">We respond fast and make it easy to start a conversation.</p>
+            </div>
+            <a class="btn btn-primary" href="contact.html">Contact us</a>
           </div>
-          <div class="split__copy">
-            <h2 class="h2">A premium brand—without losing our roots</h2>
-            <p class="muted">
-              We’re proud of where we come from. That’s why you’ll see “Karibu” on our site—because hospitality is part of our culture.
-              We serve the world, but we never forget Mbeya.
-            </p>
-            <a class="btn btn--primary" href="contact.html">Start a conversation</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--cta">
-      <div class="container cta reveal">
-        <div>
-          <h2 class="h2">Want to visit or coordinate supply?</h2>
-          <p class="muted">Use WhatsApp TZ/US or email—pre-filled messages supported.</p>
-        </div>
-        <div class="cta__actions">
-          <a class="btn btn--primary" href="contact.html">Contact</a>
-          <button class="btn btn--soft" type="button" data-open-wa>WhatsApp chooser</button>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <img class="footer__logo" src="mbeya-avocados-assets/Mbeya-Avocados-Footer-Logo04.svg" alt="Mbeya Avocados footer logo" />
-        <p class="muted">Premium avocados from Rungwe, Mbeya—built on sustainability and farmer impact.</p>
-      </div>
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo">
+          <p>Premium avocados from Tanzania, built on quality, sustainability, and strong farmer partnerships.</p>
+        </div>
 
-      <div class="footer__col">
-        <h3 class="footer__title">Company</h3>
-        <a class="footer__link" href="about.html">About</a>
-        <a class="footer__link" href="initiatives.html">Climate Initiatives</a>
-        <a class="footer__link" href="practices.html">Practices</a>
-        <a class="footer__link" href="contact.html">Contact</a>
-      </div>
+        <div>
+          <h4>Contact info</h4>
+          <div class="contact-list">
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21s7-4.5 7-10a7 7 0 10-14 0c0 5.5 7 10 7 10z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>Rungwe, Mbeya.</strong>
+                <small>Tanzania</small>
+              </div>
+            </div>
 
-      <div class="footer__col">
-        <h3 class="footer__title">Contact</h3>
-        <div class="footer__contact">
-          <div class="footer__contactItem">📍 Rungwe, Mbeya, Tanzania</div>
-          <div class="footer__contactItem">✉️ <a href="mailto:info@mbeyaavocados.co.tz">info@mbeyaavocados.co.tz</a></div>
-          <div class="footer__contactItem">💬 <a href="https://wa.me/255754763558" target="_blank" rel="noopener">WhatsApp TZ</a></div>
-          <div class="footer__contactItem">💬 <a href="https://wa.me/12698613487" target="_blank" rel="noopener">WhatsApp US</a></div>
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="2"/>
+                <path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>Email</strong>
+                <small><a href="mailto:info@mbeyaavocados.co.tz">info@mbeyaavocados.co.tz</a></small>
+              </div>
+            </div>
+
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 2h6l2 5-2 2c1.5 3 3.9 5.4 6.9 6.9l2-2 5 2v6c-9.4 0-17-7.6-17-17z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>WhatsApp / Phone</strong>
+                <small><a href="https://wa.me/12698613487" target="_blank" rel="noopener">+1 (269) 861-3487</a></small>
+                <small><a href="https://wa.me/255754763558" target="_blank" rel="noopener">+255 754 763 558</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4>Social</h4>
+          <div class="social-row">
+            <a class="social-btn" href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 17a5 5 0 100-10 5 5 0 000 10z" stroke="currentColor" stroke-width="2"/>
+                <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              Instagram
+            </a>
+
+            <a class="social-btn" href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 4h4v16H4V4z" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 9h4v2c.7-1.2 2-2 3.6-2 3 0 4.4 2 4.4 5.2V20h-4v-5.2c0-1.6-.6-2.7-2.1-2.7-1.2 0-1.9.8-2.2 1.6-.1.3-.1.7-.1 1.1V20h-4V9z" stroke="currentColor" stroke-width="2"/>
+                <path d="M6 7a2 2 0 110-4 2 2 0 010 4z" fill="currentColor"/>
+              </svg>
+              LinkedIn
+            </a>
+
+            <!-- Keep placeholders so you can add later -->
+            <span class="social-btn" title="Add Facebook link later" style="opacity:.65; cursor:not-allowed;">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v3H7v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1z" fill="currentColor"/>
+              </svg>
+              Facebook (soon)
+            </span>
+
+            <span class="social-btn" title="Add X/Twitter link later" style="opacity:.65; cursor:not-allowed;">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 20L20 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 4h6l6 16h-6L8 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+              X (soon)
+            </span>
+          </div>
+
+          <div style="margin-top:14px;">
+            <a class="btn btn-primary" href="contact.html">Request a callback</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container footer__bottom">
-      <p class="muted">© <span id="year"></span> Mbeya Avocados. All rights reserved.</p>
-      <a class="to-top" href="#top">Back to top ↑</a>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Mbeya Avocados. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,.55);">Built for premium customer experience</span>
     </div>
   </footer>
 
-  <div class="stickyCta" aria-label="Quick actions">
-    <a class="stickyCta__btn" href="mailto:info@mbeyaavocados.co.tz"><span class="stickyCta__icon" aria-hidden="true">✉️</span>Email</a>
-    <button class="stickyCta__btn" type="button" data-open-wa><span class="stickyCta__icon" aria-hidden="true">💬</span>WhatsApp</button>
-    <a class="stickyCta__btn" href="contact.html"><span class="stickyCta__icon" aria-hidden="true">📍</span>Contact</a>
-  </div>
-
-  <div class="modal" id="waModal" aria-hidden="true" role="dialog" aria-label="Choose WhatsApp number">
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__panel" role="document">
-      <div class="modal__head">
-        <h3 class="modal__title">Send WhatsApp message</h3>
-        <button class="modal__close" type="button" data-close-modal aria-label="Close">×</button>
-      </div>
-      <p class="muted">Choose the number you prefer. We’ll open WhatsApp with a pre-filled message.</p>
-      <div class="modal__actions">
-        <button class="btn btn--soft" type="button" data-wa-choice="tz">WhatsApp TZ</button>
-        <button class="btn btn--soft" type="button" data-wa-choice="us">WhatsApp US</button>
-      </div>
-    </div>
-  </div>
-
   <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
