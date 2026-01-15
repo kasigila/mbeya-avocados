@@ -1,242 +1,373 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Contact Us | Mbeya Avocados</title>
-  <meta name="description" content="Contact Mbeya Avocados. We respond quickly. Reach us in Rungwe, Mbeya, via email or WhatsApp." />
+  <title>Contact — Mbeya Avocados</title>
+  <meta name="description" content="Contact Mbeya Avocados in Rungwe, Mbeya. Send a pre-filled Email or WhatsApp message (TZ/US) in seconds." />
+  <meta name="theme-color" content="#0E5A3A" />
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Contact Mbeya Avocados">
-  <meta property="og:description" content="Premium service, fast responses, clear communication.">
-  <meta property="og:image" content="mbeya-avocados-assets/avo-growers.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Mbeya Avocados" />
+  <meta property="og:description" content="Send a pre-filled Email or WhatsApp message (TZ/US). View our location in Rungwe, Mbeya, Tanzania." />
+  <meta property="og:image" content="mbeya-avocados-assets/Mbeya-avocado-bg-image02.jpg" />
 
-  <link rel="icon" href="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html" aria-label="Mbeya Avocados Home">
-        <img src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo">
-        <div class="brand-text">
-          <strong>Mbeya Avocados</strong>
-          <span>Growing the perfect avocados</span>
-        </div>
+  <div class="topbar" role="region" aria-label="Announcement">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="chip chip--soft">
+          <span class="chip__dot" aria-hidden="true"></span>
+          Karibu — Welcome
+        </span>
+        <span class="topbar__note">Rungwe, Mbeya • Tanzania</span>
+      </div>
+      <div class="topbar__right">
+        <a class="topbar__link" href="index.html">Home <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" data-elevate>
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Mbeya Avocados home">
+        <img class="brand__logo" src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo" />
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="initiatives.html">Green Initiatives</a>
-        <a href="practices.html">Good Practices</a>
-        <a class="active" href="contact.html">Contact</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="btn btn-small btn-primary" href="#form">Message us</a>
-        <button class="menu-btn" type="button" aria-label="Open menu" data-open-drawer>
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
         </button>
-      </div>
+
+        <div class="nav__panel" id="navPanel">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+
+            <li class="nav__dropdown">
+              <button class="nav__link nav__linkBtn" type="button" aria-expanded="false">
+                About
+                <span class="nav__chev" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav__menu" role="menu">
+                <a role="menuitem" class="nav__menuLink" href="about.html">About Mbeya Avocados</a>
+                <a role="menuitem" class="nav__menuLink" href="initiatives.html">Green Climate Initiatives</a>
+                <a role="menuitem" class="nav__menuLink" href="practices.html">Good Agricultural Practices</a>
+              </div>
+            </li>
+
+            <li><a class="nav__link is-active" href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav__ctaRow">
+            <a class="btn btn--ghost" href="initiatives.html">Sustainability</a>
+            <a class="btn btn--primary" href="#contact">Send a Message</a>
+          </div>
+
+          <div class="nav__socialRow" aria-label="Social links">
+            <a class="iconBtn" href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+            </a>
+            <a class="iconBtn" href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6.94 6.5A2.44 2.44 0 1 1 7 1.62a2.44 2.44 0 0 1-.06 4.88ZM2.5 22h4.9V8.2H2.5V22Zm7.6 0H15V14.3c0-2 .04-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V22Zm11.4 0h-4.9v-7.5c0-1.8 0-4.1-2.5-4.1s-2.9 2-2.9 4V22"/></svg>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
-  <div class="drawer-backdrop" data-backdrop></div>
-  <aside class="drawer" data-drawer aria-label="Mobile menu">
-    <div class="drawer-header">
-      <strong>Menu</strong>
-      <button class="btn btn-small" type="button" data-close-drawer>Close</button>
-    </div>
-    <nav class="drawer-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="initiatives.html">Green Initiatives</a>
-      <a href="practices.html">Good Practices</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="drawer-footer">
-      <div class="pill">Fast responses • Clear answers</div>
-    </div>
-  </aside>
-
-  <section class="hero">
-    <div class="hero-bg" style="background:
-      linear-gradient(180deg, rgba(6,10,7,.35) 0%, rgba(6,10,7,.90) 75%, rgba(6,10,7,1) 100%),
-      url('mbeya-avocados-assets/avo-growers.png') center/cover no-repeat;">
-    </div>
-    <div class="container hero-inner">
-      <div class="reveal">
-        <div class="kicker"><span class="dot"></span> Contact</div>
-        <h1>Let’s talk. Premium service starts with speed & clarity.</h1>
-        <p class="lead">
-          Tell us what you need—sourcing, partnerships, or general inquiries. We respond quickly and keep communication simple.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/255754763558" target="_blank" rel="noopener">WhatsApp Tanzania</a>
-          <a class="btn" href="https://wa.me/12698613487" target="_blank" rel="noopener">WhatsApp USA</a>
-        </div>
-      </div>
-
-      <div class="hero-card reveal">
-        <div class="thumb">
-          <img src="mbeya-avocados-assets/Avo-3-Custom-min-1.jpg" alt="Avocado close up" loading="lazy">
-        </div>
-        <div class="meta">
-          <div class="meta-row"><strong>Location</strong><span>Rungwe, Mbeya</span></div>
-          <div class="meta-row"><strong>Email</strong><span>info@mbeyaavocados.co.tz</span></div>
-          <div class="meta-row"><strong>Phone/WhatsApp</strong><span>+1 (269) 861-3487 • +255 754 763 558</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <main id="main">
-    <section class="section">
-      <div class="container">
-        <div class="grid grid-2">
-          <div class="card reveal">
-            <h2 style="margin:0 0 6px; letter-spacing:-.4px;">Contact info</h2>
-            <p style="margin:0; color:rgba(255,255,255,.72);">Choose what’s easiest—we’re available.</p>
-            <div class="hr"></div>
+    <!-- Page hero -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="mbeya-avocados-assets/laughing-kids-with-avos-min.jpg" alt="" />
+        <div class="hero__overlay"></div>
+        <div class="hero__texture" aria-hidden="true"></div>
+      </div>
 
-            <div class="contact-list">
-              <div class="contact-chip">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 21s7-4.5 7-10a7 7 0 10-14 0c0 5.5 7 10 7 10z" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <div>
-                  <strong>Rungwe, Mbeya.</strong>
-                  <small>Tanzania</small>
-                </div>
-              </div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="kicker">
+            <span class="kicker__pill">Contact</span>
+            Email or WhatsApp • TZ / US
+          </p>
 
-              <div class="contact-chip">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <div>
-                  <strong>Email</strong>
-                  <small><a href="mailto:info@mbeyaavocados.co.tz">info@mbeyaavocados.co.tz</a></small>
-                </div>
-              </div>
+          <h1 class="hero__title">
+            Let’s connect — <span class="accent">fast</span> and professional.
+          </h1>
 
-              <div class="contact-chip">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M6 2h6l2 5-2 2c1.5 3 3.9 5.4 6.9 6.9l2-2 5 2v6c-9.4 0-17-7.6-17-17z" stroke="currentColor" stroke-width="2"/>
-                </svg>
-                <div>
-                  <strong>WhatsApp / Phone</strong>
-                  <small><a href="https://wa.me/12698613487" target="_blank" rel="noopener">+1 (269) 861-3487</a></small>
-                  <small><a href="https://wa.me/255754763558" target="_blank" rel="noopener">+255 754 763 558</a></small>
-                </div>
-              </div>
+          <p class="hero__sub">
+            Send a pre-filled message in seconds. We’re based in <strong>Rungwe, Mbeya</strong> — and work with partners globally.
+          </p>
+
+          <div class="hero__cta">
+            <button class="btn btn--primary btn--lg" type="button" data-scroll="#contact">Send a message</button>
+            <a class="btn btn--soft btn--lg" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Rungwe%2C%20Mbeya%2C%20Tanzania">
+              Open map
+            </a>
+          </div>
+
+          <div class="heroStrip reveal" aria-label="Quick details">
+            <div class="heroStrip__item">
+              <span class="heroStrip__label">Email</span>
+              <span class="heroStrip__value">info@mbeyaavocados.co.tz</span>
             </div>
+            <div class="heroStrip__divider" aria-hidden="true"></div>
+            <div class="heroStrip__item">
+              <span class="heroStrip__label">WhatsApp TZ</span>
+              <span class="heroStrip__value">+255 754 763 558</span>
+            </div>
+            <div class="heroStrip__divider" aria-hidden="true"></div>
+            <div class="heroStrip__item">
+              <span class="heroStrip__label">WhatsApp US</span>
+              <span class="heroStrip__value">+1 (269) 861-3487</span>
+            </div>
+          </div>
+        </div>
 
-            <div class="hr"></div>
+        <div class="hero__media reveal" aria-hidden="true">
+          <div class="mediaStack">
+            <figure class="mediaCard">
+              <img src="mbeya-avocados-assets/Avo-1-Custom-min.jpg" alt="" />
+            </figure>
+            <figure class="mediaCard mediaCard--offset">
+              <img src="mbeya-avocados-assets/Avo-3-Custom-min-1.jpg" alt="" />
+            </figure>
+            <div class="badge">
+              <p class="badge__top">Based in</p>
+              <p class="badge__mid">Rungwe</p>
+              <p class="badge__bot">Mbeya, Tanzania</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h3 style="margin:0 0 10px;">Social</h3>
-            <div class="social-row">
-              <a class="social-btn" href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank" rel="noopener">Instagram</a>
-              <a class="social-btn" href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank" rel="noopener">LinkedIn</a>
-              <span class="social-btn" style="opacity:.65; cursor:not-allowed;">Facebook (soon)</span>
-              <span class="social-btn" style="opacity:.65; cursor:not-allowed;">X (soon)</span>
+    <!-- Contact + map -->
+    <section class="section section--alt" id="contact">
+      <div class="container mapBlock reveal">
+        <div class="mapBlock__content">
+          <p class="kicker">
+            <span class="kicker__pill kicker__pill--green">Karibu</span>
+            From Mbeya with pride
+          </p>
+
+          <h2 class="h2">Send us a message</h2>
+          <p class="muted">
+            Choose Email or WhatsApp (TZ/US). Your message will open pre-filled — no backend needed.
+          </p>
+
+          <div class="contactGrid" style="margin-top: 14px;">
+            <div class="contactMini">
+              <p class="contactMini__k">Location</p>
+              <p class="contactMini__v">Rungwe, Mbeya.</p>
+            </div>
+            <div class="contactMini">
+              <p class="contactMini__k">Email</p>
+              <p class="contactMini__v"><a class="textLink" href="mailto:info@mbeyaavocados.co.tz">info@mbeyaavocados.co.tz</a></p>
+            </div>
+            <div class="contactMini">
+              <p class="contactMini__k">WhatsApp TZ</p>
+              <p class="contactMini__v"><a class="textLink" href="https://wa.me/255754763558" target="_blank" rel="noopener">+255 754 763 558</a></p>
+            </div>
+            <div class="contactMini">
+              <p class="contactMini__k">WhatsApp US</p>
+              <p class="contactMini__v"><a class="textLink" href="https://wa.me/12698613487" target="_blank" rel="noopener">+1 (269) 861-3487</a></p>
             </div>
           </div>
 
-          <div class="card reveal" id="form">
-            <h2 style="margin:0 0 6px; letter-spacing:-.4px;">Send a message</h2>
-            <p class="form-note">
-              
+          <div style="margin-top: 16px;">
+            <a class="btn btn--ghost" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Rungwe%2C%20Mbeya%2C%20Tanzania">
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="mapBlock__embed" aria-label="Map of Rungwe, Mbeya">
+          <iframe
+            title="Map: Rungwe, Mbeya, Tanzania"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Rungwe%2C%20Mbeya%2C%20Tanzania&z=10&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form section (same prefill system as index) -->
+    <section class="section" aria-label="Contact form">
+      <div class="container">
+        <div class="ctaCard reveal">
+          <div class="ctaCard__left">
+            <h2 class="h2">Partnerships, buyers, growers — welcome.</h2>
+            <p class="muted">
+              Share what you’re looking for, and we’ll respond with next steps.
+              <strong>Tip:</strong> WhatsApp is fastest for many partners.
             </p>
 
-            <form class="form" action="mailto:info@mbeyaavocados.co.tz" method="post" enctype="text/plain">
-              <div class="form-row">
-                <div class="field">
-                  <label for="name">Full name</label>
-                  <input id="name" name="name" autocomplete="name" placeholder="Your name" required>
-                </div>
-                <div class="field">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-                </div>
+            <div class="list" style="margin-top: 14px;">
+              <div class="list__item">
+                <span class="list__dot" aria-hidden="true"></span>
+                <p><strong>Buyers:</strong> importers, wholesalers, retail, food service.</p>
               </div>
-
-              <div class="form-row">
-                <div class="field">
-                  <label for="phone">Phone / WhatsApp (optional)</label>
-                  <input id="phone" name="phone" autocomplete="tel" placeholder="+255 ... or +1 ...">
-                </div>
-                <div class="field">
-                  <label for="topic">Topic</label>
-                  <select id="topic" name="topic">
-                    <option>Business inquiry</option>
-                    <option>Supply / sourcing</option>
-                    <option>Partnership</option>
-                    <option>General question</option>
-                  </select>
-                </div>
+              <div class="list__item">
+                <span class="list__dot" aria-hidden="true"></span>
+                <p><strong>Growers:</strong> collaboration and supply relationships.</p>
               </div>
-
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell us what you need..."></textarea>
+              <div class="list__item">
+                <span class="list__dot" aria-hidden="true"></span>
+                <p><strong>General:</strong> media, sustainability, community.</p>
               </div>
-
-              <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-                <button class="btn btn-primary" type="submit">Send message</button>
-                <a class="btn" href="https://wa.me/255754763558" target="_blank" rel="noopener">Or WhatsApp us now</a>
-              </div>
-
-              <p class="form-note" style="margin-top:10px;">
-                Prefer email? Use: <a href="mailto:info@mbeyaavocados.co.tz" style="text-decoration:underline; text-underline-offset:3px;">info@mbeyaavocados.co.tz</a>
-              </p>
-            </form>
+            </div>
           </div>
+
+          <form class="form" id="prefillForm">
+            <div class="form__row">
+              <label class="field">
+                <span class="field__label">Full name</span>
+                <input class="field__input" name="name" autocomplete="name" placeholder="Your name" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Email</span>
+                <input class="field__input" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label class="field">
+                <span class="field__label">Phone (optional)</span>
+                <input class="field__input" name="phone" autocomplete="tel" placeholder="+255…" />
+              </label>
+              <label class="field">
+                <span class="field__label">Interested in</span>
+                <select class="field__input" name="interest">
+                  <option value="Partnership / Buyer inquiry">Partnership / Buyer inquiry</option>
+                  <option value="Grower / Supply collaboration">Grower / Supply collaboration</option>
+                  <option value="General question">General question</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="field">
+              <span class="field__label">Message</span>
+              <textarea class="field__input field__input--area" name="message" rows="5" placeholder="Tell us what you need…" required></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="button" data-send="email">
+                Send via Email
+              </button>
+
+              <div class="waChooser">
+                <button class="btn btn--soft" type="button" data-send="whatsapp" data-wa="tz">
+                  WhatsApp TZ
+                </button>
+                <button class="btn btn--soft" type="button" data-send="whatsapp" data-wa="us">
+                  WhatsApp US
+                </button>
+              </div>
+            </div>
+
+            <p class="form__hint">
+              Clicking opens your email app or WhatsApp with a pre-filled message. No account needed on this website.
+            </p>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-top">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <img src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo">
-          <p>Premium avocados from Tanzania, built on quality, sustainability, and strong farmer partnerships.</p>
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <img src="mbeya-avocados-assets/Mbeya-Avocados-Footer-Logo04.svg" alt="Mbeya Avocados" class="footer__logo" />
+        <p class="muted">
+          Premium avocados from Rungwe, Mbeya — built with sustainability, quality, and partnership in mind.
+        </p>
+        <p class="footer__tagline">Karibu • From Mbeya with pride</p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h3 class="footer__h">Company</h3>
+          <a class="footer__a" href="about.html">About</a>
+          <a class="footer__a" href="initiatives.html">Green Initiatives</a>
+          <a class="footer__a" href="practices.html">Good Practices</a>
         </div>
 
-        <div>
-          <h4>Contact info</h4>
-          <p style="margin:0; color:rgba(255,255,255,.72);">Rungwe, Mbeya. • info@mbeyaavocados.co.tz</p>
-          <p style="margin:8px 0 0; color:rgba(255,255,255,.72);">+1 (269) 861-3487 • +255 754 763 558</p>
-        </div>
-
-        <div>
-          <h4>Social</h4>
-          <div class="social-row">
-            <a class="social-btn" href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank" rel="noopener">Instagram</a>
-            <a class="social-btn" href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank" rel="noopener">LinkedIn</a>
-            <span class="social-btn" style="opacity:.65; cursor:not-allowed;">Facebook (soon)</span>
-            <span class="social-btn" style="opacity:.65; cursor:not-allowed;">X (soon)</span>
+        <div class="footer__col">
+          <h3 class="footer__h">Contact Info</h3>
+          <div class="footer__info">
+            <p><strong>Rungwe, Mbeya.</strong></p>
+            <p><a class="footer__a" href="mailto:info@mbeyaavocados.co.tz">info@mbeyaavocados.co.tz</a></p>
+            <p><a class="footer__a" href="https://wa.me/12698613487" target="_blank" rel="noopener">+1 (269) 861-3487</a></p>
+            <p><a class="footer__a" href="https://wa.me/255754763558" target="_blank" rel="noopener">+255 754 763 558</a></p>
           </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__h">Follow</h3>
+          <div class="footer__social">
+            <a class="iconBtn" href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+            </a>
+            <a class="iconBtn" href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6.94 6.5A2.44 2.44 0 1 1 7 1.62a2.44 2.44 0 0 1-.06 4.88ZM2.5 22h4.9V8.2H2.5V22Zm7.6 0H15V14.3c0-2 .04-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V22Zm11.4 0h-4.9v-7.5c0-1.8 0-4.1-2.5-4.1s-2.9 2-2.9 4V22"/></svg>
+            </a>
+          </div>
+          <p class="muted footer__micro">Add more links anytime.</p>
         </div>
       </div>
     </div>
 
-    <div class="footer-bottom container">
-      <span>© <span id="year"></span> Mbeya Avocados. All rights reserved.</span>
-      <span style="color:rgba(255,255,255,.55);">Fast, premium customer experience</span>
+    <div class="container footer__bottom">
+      <p class="muted">© <span id="year"></span> Mbeya Avocados. All rights reserved.</p>
+      <a class="footer__a" href="#top" data-scroll="body">Back to top ↑</a>
     </div>
   </footer>
 
+  <div class="stickyCta" aria-label="Quick actions">
+    <a class="stickyCta__btn" href="mailto:info@mbeyaavocados.co.tz" aria-label="Email Mbeya Avocados">
+      <span class="stickyCta__icon" aria-hidden="true">✉️</span>
+      Email
+    </a>
+    <button class="stickyCta__btn" type="button" data-open-wa aria-label="Open WhatsApp chooser">
+      <span class="stickyCta__icon" aria-hidden="true">💬</span>
+      WhatsApp
+    </button>
+    <a class="stickyCta__btn" href="#contact" data-scroll="#contact" aria-label="Go to contact section">
+      <span class="stickyCta__icon" aria-hidden="true">📍</span>
+      Map
+    </a>
+  </div>
+
+  <div class="modal" id="waModal" aria-hidden="true" role="dialog" aria-label="Choose WhatsApp number">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__panel" role="document">
+      <div class="modal__head">
+        <h3 class="modal__title">Send WhatsApp message</h3>
+        <button class="modal__close" type="button" data-close-modal aria-label="Close">×</button>
+      </div>
+      <p class="muted">Choose the number you prefer. We’ll open WhatsApp with a pre-filled message.</p>
+      <div class="modal__actions">
+        <button class="btn btn--soft" type="button" data-wa-choice="tz">WhatsApp TZ</button>
+        <button class="btn btn--soft" type="button" data-wa-choice="us">WhatsApp US</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
