@@ -1,164 +1,387 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Mbeya Avocados – Growing The Perfect Avocados</title>
-  <meta name="description" content="Green avocado farming, sustainability & community impact in Tanzania.">
+  <title>Mbeya Avocados | Premium Avocados from Tanzania</title>
+  <meta name="description" content="Mbeya Avocados—premium avocados from the Southern Highlands of Tanzania. Quality-first, sustainability-led, and built on strong farmer partnerships." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Mbeya Avocados – Growing The Perfect Avocados">
-  <meta property="og:description" content="Green avocado farming, sustainability & community impact in Tanzania.">
-  <meta property="og:image" content="/mbeya-avocados-assets/Mbeya-avocado-bg-image02.jpg">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Mbeya Avocados | Premium Avocados from Tanzania">
+  <meta property="og:description" content="Quality-first. Sustainability-led. Built with farmer partnerships in Mbeya, Tanzania.">
+  <meta property="og:image" content="mbeya-avocados-assets/Mbeya-avocado-bg-image02.jpg">
 
-  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Mbeya Avocados | Premium Avocados from Tanzania">
+  <meta property="twitter:description" content="Quality-first. Sustainability-led. Built with farmer partnerships.">
+  <meta property="twitter:image" content="mbeya-avocados-assets/Mbeya-avocado-bg-image02.jpg">
+
+  <link rel="icon" href="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-  <nav>
-    <img src="/mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados Logo">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#initiatives">Initiatives</a></li>
-      <li><a href="#practices">Practices</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Mbeya Avocados Home">
+        <img src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo">
+        <div class="brand-text">
+          <strong>Mbeya Avocados</strong>
+          <span>Growing the perfect avocados</span>
+        </div>
+      </a>
 
-<section class="hero" style="background-image: url('/mbeya-avocados-assets/Mbeya-avocado-bg-image02.jpg');">
-  <div class="hero-content">
-    <h1>Mbeya Avocados</h1>
-    <p>Premium avocados grown with care, sustainability & community in mind.</p>
-    <a href="#about" class="btn-primary">Learn More</a>
-  </div>
-</section>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="initiatives.html">Green Initiatives</a>
+        <a href="practices.html">Good Practices</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-<section id="about">
-  <div class="container split">
-    <div>
-      <h2>About Us</h2>
-      <p>
-        Mbeya Avocados is a green agricultural business located in the fertile highlands of Tanzania.
-        We’re focused on environmental sustainability, economic growth, and social empowerment.
-      </p>
-      <p>
-        From farm to global markets, we ensure quality at every step — while supporting our growers and communities.
-      </p>
+      <div class="nav-actions">
+        <a class="btn btn-small btn-primary" href="contact.html">Get in touch</a>
+        <button class="menu-btn" type="button" aria-label="Open menu" data-open-drawer>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
-    <img src="/mbeya-avocados-assets/avo-growers.png" alt="Avocado Growers">
-  </div>
-</section>
+  </header>
 
-<section id="initiatives">
-  <div class="container">
-    <h2 style="text-align:center;">Green Climate Initiatives</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="/mbeya-avocados-assets/bg-branch.png">
-        <div class="card-content">
-          <h3>Soil Conservation</h3>
-          <p>Rich soils through regenerative farming.</p>
+  <!-- Mobile drawer -->
+  <div class="drawer-backdrop" data-backdrop></div>
+  <aside class="drawer" data-drawer aria-label="Mobile menu">
+    <div class="drawer-header">
+      <strong>Menu</strong>
+      <button class="btn btn-small" type="button" data-close-drawer>Close</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="initiatives.html">Green Initiatives</a>
+      <a href="practices.html">Good Practices</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="pill">Rungwe, Mbeya • Tanzania</div>
+    </div>
+  </aside>
+
+  <!-- Premium Hero -->
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Avocado farm background"></div>
+
+    <div class="container hero-inner">
+      <div class="reveal">
+        <div class="kicker"><span class="dot"></span> Premium avocados from Tanzania</div>
+        <h1>
+          Quality you can trust.<br>
+          Partnerships that last.
+        </h1>
+        <p class="lead">
+          Mbeya Avocados connects growers in the Southern Highlands of Tanzania to reliable markets—through quality-first
+          handling, sustainability-led practices, and clear communication.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Request supply info</a>
+          <a class="btn" href="#story">Explore our story</a>
+          <a class="btn btn-ghost" href="initiatives.html">Sustainability</a>
+        </div>
+
+        <div style="margin-top:18px; display:flex; flex-wrap:wrap; gap:10px;">
+          <span class="pill">Quality-first handling</span>
+          <span class="pill">Smallholder farmer partnerships</span>
+          <span class="pill">Sustainability-led growth</span>
         </div>
       </div>
-      <div class="card">
-        <img src="/mbeya-avocados-assets/3avos-leaves-min.png">
-        <div class="card-content">
-          <h3>Water Protection</h3>
-          <p>Efficient irrigation & watershed care.</p>
+
+      <div class="hero-card reveal">
+        <div class="thumb">
+          <img src="mbeya-avocados-assets/Avo-1-Custom-min.jpg" alt="Premium avocado" loading="lazy">
+        </div>
+
+        <div class="meta">
+          <div class="meta-row">
+            <strong>Origin</strong>
+            <span>Rungwe, Mbeya</span>
+          </div>
+          <div class="meta-row">
+            <strong>What we do</strong>
+            <span>Grow • Source • Connect</span>
+          </div>
+          <div class="meta-row">
+            <strong>Response time</strong>
+            <span>Fast & clear communication</span>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-small" href="https://wa.me/255754763558" target="_blank" rel="noopener">WhatsApp TZ</a>
+          <a class="btn btn-small" href="https://wa.me/12698613487" target="_blank" rel="noopener">WhatsApp US</a>
         </div>
       </div>
-      <div class="card">
-        <img src="/mbeya-avocados-assets/Avo-3-Custom-min-1.jpg">
-        <div class="card-content">
-          <h3>Climate Resilience</h3>
-          <p>Adapting farms to changing weather.</p>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- Credibility + snapshot -->
+    <section class="section-sm" id="story">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>A premium experience from farm to customer</h2>
+            <p>
+              A modern, trustworthy brand is built on consistency. We focus on quality, traceability-minded processes,
+              and practical sustainability that supports long-term supply.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Quality-first handling</h3>
+            <p>Careful harvesting, sorting, and packing designed to protect freshness and reduce waste.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.5 7-10a7 7 0 10-14 0c0 5.5 7 10 7 10z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 12a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Strong origin story</h3>
+            <p>From the Southern Highlands of Tanzania—known for fertile land and ideal growing conditions.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l3 7 7 .5-5.5 4.2 2 7.3L12 17l-6.5 4 2-7.3L2 9.5 9 9l3-7z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Sustainability-led</h3>
+            <p>Practical climate initiatives that help farms stay resilient season after season.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium split (image + narrative + quick links) -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="grid grid-2">
+          <div class="media-card reveal">
+            <div class="media" style="background-image:url('mbeya-avocados-assets/Tukuyu-Avocados-tree-min.jpg'); height: 340px;"></div>
+            <div class="body">
+              <h3>Built with growers, designed for reliability</h3>
+              <p>
+                We work with individual growers and grower groups in Mbeya—supporting quality standards while connecting
+                avocados to people who need them.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Explore what matters most</h3>
+            <p style="margin:0; color:rgba(255,255,255,.72);">Quick paths for customers, partners, and collaborators.</p>
+            <div class="hr"></div>
+
+            <div class="list">
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 20V4h16v16H4z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M7 9h10M7 13h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>About Mbeya Avocados</strong>
+                  <span>Who we are, where we operate, and how we work.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2c4 3 7 6 7 11a7 7 0 01-14 0c0-5 3-8 7-11z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Green climate initiatives</strong>
+                  <span>Practical actions supporting sustainability and resilience.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12h7l2 3 2-6 2 6 2-3h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Good agricultural practices</strong>
+                  <span>Consistency-focused handling and farm standards.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-actions" style="margin-top:16px;">
+              <a class="btn btn-primary" href="about.html">About us</a>
+              <a class="btn" href="initiatives.html">Green Initiatives</a>
+              <a class="btn" href="practices.html">Good Practices</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium image trio (gallery-style) -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>People, farms, and impact</h2>
+            <p>Photography-led storytelling that feels premium and authentic.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="media-card reveal">
+            <div class="media" style="background-image:url('mbeya-avocados-assets/laughing-kids-with-avos-min02.jpg');"></div>
+            <div class="body">
+              <h3>Community impact</h3>
+              <p>Strengthening livelihoods through reliable market connections.</p>
+            </div>
+          </div>
+
+          <div class="media-card reveal">
+            <div class="media" style="background-image:url('mbeya-avocados-assets/growers-grove-bg.jpg');"></div>
+            <div class="body">
+              <h3>Grower partnerships</h3>
+              <p>Supporting smallholder growers with standards and consistency.</p>
+            </div>
+          </div>
+
+          <div class="media-card reveal">
+            <div class="media" style="background-image:url('mbeya-avocados-assets/Avo-3-Custom-min-1.jpg');"></div>
+            <div class="body">
+              <h3>Premium quality</h3>
+              <p>Freshness protected through careful handling and sorting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium CTA band -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="media-card reveal">
+          <div class="media" style="background-image:url('mbeya-avocados-assets/bg-branch.png'); height: 320px;"></div>
+          <div class="body" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+            <div>
+              <h3 style="margin:0 0 6px;">Ready to work with Mbeya Avocados?</h3>
+              <p style="margin:0; color:rgba(255,255,255,.72);">
+                We keep communication fast, clear, and professional—because premium service matters.
+              </p>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="contact.html">Contact us</a>
+              <a class="btn" href="mailto:info@mbeyaavocados.co.tz">Email us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo">
+          <p>Premium avocados from Tanzania, built on quality, sustainability, and strong farmer partnerships.</p>
+        </div>
+
+        <div>
+          <h4>Contact info</h4>
+          <div class="contact-list">
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21s7-4.5 7-10a7 7 0 10-14 0c0 5.5 7 10 7 10z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>Rungwe, Mbeya.</strong>
+                <small>Tanzania</small>
+              </div>
+            </div>
+
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="2"/>
+                <path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>Email</strong>
+                <small><a href="mailto:info@mbeyaavocados.co.tz">info@mbeyaavocados.co.tz</a></small>
+              </div>
+            </div>
+
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 2h6l2 5-2 2c1.5 3 3.9 5.4 6.9 6.9l2-2 5 2v6c-9.4 0-17-7.6-17-17z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>WhatsApp / Phone</strong>
+                <small><a href="https://wa.me/12698613487" target="_blank" rel="noopener">+1 (269) 861-3487</a></small>
+                <small><a href="https://wa.me/255754763558" target="_blank" rel="noopener">+255 754 763 558</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4>Social</h4>
+          <div class="social-row">
+            <a class="social-btn" href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank" rel="noopener">Instagram</a>
+            <a class="social-btn" href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="social-btn" title="Add Facebook link later" style="opacity:.65; cursor:not-allowed;">Facebook (soon)</span>
+            <span class="social-btn" title="Add X/Twitter link later" style="opacity:.65; cursor:not-allowed;">X (soon)</span>
+          </div>
+
+          <div style="margin-top:14px;">
+            <a class="btn btn-primary" href="contact.html">Request a callback</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<section id="practices">
-  <div class="container split">
-    <img src="/mbeya-avocados-assets/avo-stem2.png" alt="Good Practices">
-    <div>
-      <h2>Good Agricultural Practices</h2>
-      <p>
-        We follow rigorous practices that ensure quality, safety, and consistency for our produce.
-      </p>
-      <p>
-        From responsible input use to careful harvesting and handling, every step meets international standards.
-      </p>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Mbeya Avocados. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,.55);">Premium customer experience</span>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section id="gallery">
-  <div class="container">
-    <h2 style="text-align:center;">Gallery</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="/mbeya-avocados-assets/laughing-kids-with-avos-min02.jpg">
-        <div class="card-content"><h3>Community Smiles</h3></div>
-      </div>
-      <div class="card">
-        <img src="/mbeya-avocados-assets/growers-grove-bg.jpg">
-        <div class="card-content"><h3>Farm Scenes</h3></div>
-      </div>
-      <div class="card">
-        <img src="/mbeya-avocados-assets/Tukuyu-Avocados-tree-min.jpg">
-        <div class="card-content"><h3>Avocado Fields</h3></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container split">
-    <div>
-      <h2>Contact Us</h2>
-      <p><strong>Email:</strong> info@mbeyaavocados.co.tz</p>
-      <p><strong>Phone (US):</strong> +1 (269) 861‑3487</p>
-      <p><strong>Phone (TZ):</strong> +255 754 763 558</p>
-      <p><strong>Location:</strong> Rungwe, Mbeya</p>
-
-      <div class="social-links">
-        <a href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn">
-        </a>
-      </div>
-    </div>
-    <img src="/mbeya-avocados-assets/laughing-kids-with-avos-min.jpg" alt="Contact Visual">
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div>
-      <h4>CONTACT INFO</h4>
-      <p>Rungwe, Mbeya</p>
-      <p>info@mbeyaavocados.co.tz</p>
-      <p>+1 (269) 861‑3487</p>
-      <p>+255 754 763 558</p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg">
-        </a>
-        <a href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg">
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
