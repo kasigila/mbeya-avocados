@@ -570,3 +570,17 @@ input:focus, textarea:focus, select:focus{
     padding: 14px;
   }
 }
+/* TOPBAR – prevent overflow on small screens */
+@media (max-width: 640px){
+  .topbar-inner{
+    gap: 10px;
+  }
+
+  .brand{
+    min-width: auto;
+  }
+
+  .brand-text span{
+    display: none;
+  }
+}
