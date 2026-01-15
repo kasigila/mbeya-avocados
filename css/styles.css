@@ -5,25 +5,23 @@
    ========================================================== */
 
 :root{
-  /* BACKGROUNDS */
-  --bg0:#f7f9f6;          /* was #060a07 */
-  --bg1:#ffffff;          /* was #0b120d */
+  /* LIGHT MODE INVERSION — SAME PALETTE LOGIC */
+  --bg0:#f7f9f6;
+  --bg1:#ffffff;
 
-  /* PANELS */
   --panel: rgba(0,0,0,.04);
   --panel2: rgba(0,0,0,.06);
   --line: rgba(0,0,0,.10);
 
-  /* TEXT */
   --text: rgba(10,14,12,.92);
   --muted: rgba(10,14,12,.62);
 
-  /* BRAND COLORS — unchanged */
+  /* BRAND — UNCHANGED */
   --brand:#33c46a;
   --brand2:#20a65a;
   --gold:#f6c76a;
 
-  /* SHADOWS — flipped lighter */
+  /* SHADOWS — LIGHT */
   --shadow: 0 22px 60px rgba(0,0,0,.12);
   --shadow2: 0 12px 32px rgba(0,0,0,.10);
 
@@ -44,10 +42,10 @@ body{
   margin:0;
   font-family: var(--font);
   color: var(--text);
-  background:
-    radial-gradient(1200px 800px at 15% 10%, rgba(51,196,106,.18), transparent 55%),
-    radial-gradient(900px 700px at 85% 15%, rgba(246,199,106,.14), transparent 55%),
-    radial-gradient(900px 800px at 50% 110%, rgba(32,166,90,.10), transparent 55%),
+      background:
+    radial-gradient(1200px 800px at 15% 10%, rgba(51,196,106,.10), transparent 55%),
+    radial-gradient(900px 700px at 85% 15%, rgba(246,199,106,.10), transparent 55%),
+    radial-gradient(900px 800px at 50% 110%, rgba(32,166,90,.08), transparent 55%),
     linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 100%);
   overflow-x:hidden;
   line-height:1.6;
@@ -511,4 +509,48 @@ input:focus, textarea:focus, select:focus{
 .reveal.show{
   opacity:1;
   transform: translateY(0);
+}
+/* ===============================
+   MOBILE-FIRST POLISH (NO REDESIGN)
+   =============================== */
+
+@media (max-width: 640px){
+
+  /* Hero spacing */
+  .hero{
+    padding: 64px 0 48px;
+  }
+
+  /* Hero typography */
+  h1{
+    font-size: clamp(1.75rem, 7vw, 2.4rem);
+  }
+
+  .lead{
+    font-size: 1rem;
+  }
+
+  /* Section rhythm */
+  .section{
+    padding: 64px 0;
+  }
+
+  .section-sm{
+    padding: 44px 0;
+  }
+
+  /* Grid breathing room */
+  .grid{
+    gap: 18px;
+  }
+
+  /* Buttons = thumb friendly */
+  .btn{
+    min-height: 46px;
+    padding: 14px 18px;
+  }
+
+  .btn-small{
+    min-height: 42px;
+  }
 }
