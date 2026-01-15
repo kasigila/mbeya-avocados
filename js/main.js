@@ -10,14 +10,14 @@
   const closeBtn = document.querySelector('[data-close-drawer]');
 
   function openDrawer() {
-    if (!drawer || !backdrop) return;
+  if (!drawer || !backdrop || drawer.classList.contains('open')) return;
     drawer.classList.add('open');
     backdrop.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
-    if (!drawer || !backdrop) return;
+  if (!drawer || !backdrop || !drawer.classList.contains('open')) return;
     drawer.classList.remove('open');
     backdrop.classList.remove('open');
     document.body.style.overflow = '';
