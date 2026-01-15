@@ -3,207 +3,283 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Green Climate Initiatives — Mbeya Avocados</title>
-  <meta name="description" content="Mbeya Avocados sustainability and climate initiatives: reducing footprint, protecting ecosystems, and building resilient supply." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Green Climate Initiatives | Mbeya Avocados</title>
+  <meta name="description" content="Explore Mbeya Avocados’ green climate initiatives—practical actions focused on reducing waste, supporting growers, and protecting the environment." />
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Green Climate Initiatives | Mbeya Avocados">
+  <meta property="og:description" content="Climate-smart actions that protect the land and improve long-term quality.">
+  <meta property="og:image" content="mbeya-avocados-assets/growers-grove-bg.jpg">
+
+  <link rel="icon" href="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-
-<body id="top">
+<body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="topbar" role="region" aria-label="Announcement">
-    <div class="container topbar__inner">
-      <div class="topbar__left">
-        <span class="chip chip--soft"><span class="chip__dot" aria-hidden="true"></span>Karibu — Sustainability</span>
-        <span class="topbar__note">Climate-smart growth from Mbeya</span>
-      </div>
-      <div class="topbar__right">
-        <a class="topbar__link" href="contact.html">Contact <span aria-hidden="true">→</span></a>
-      </div>
-    </div>
-  </div>
-
-  <header class="header">
-    <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="Mbeya Avocados home">
-        <img class="brand__logo" src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo" />
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Mbeya Avocados Home">
+        <img src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo">
+        <div class="brand-text">
+          <strong>Mbeya Avocados</strong>
+          <span>Growing the perfect avocados</span>
+        </div>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel">
-          <span class="nav__toggleLines" aria-hidden="true"></span>
-        </button>
-
-        <div class="nav__panel" id="navPanel">
-          <ul class="nav__list">
-            <li><a class="nav__link" href="index.html">Home</a></li>
-
-            <li class="nav__dropdown">
-              <button class="nav__link nav__linkBtn" type="button" aria-expanded="false">
-                About <span class="nav__chev" aria-hidden="true">▾</span>
-              </button>
-              <div class="nav__menu" role="menu">
-                <a role="menuitem" class="nav__menuLink" href="about.html">About Mbeya Avocados</a>
-                <a role="menuitem" class="nav__menuLink is-active" href="initiatives.html">Green Climate Initiatives</a>
-                <a role="menuitem" class="nav__menuLink" href="practices.html">Good Agricultural Practices</a>
-              </div>
-            </li>
-
-            <li><a class="nav__link" href="contact.html">Contact</a></li>
-          </ul>
-
-          <div class="nav__ctaRow">
-            <a class="btn btn--ghost is-active" href="initiatives.html">Sustainability</a>
-            <a class="btn btn--primary" href="contact.html">Work With Us</a>
-          </div>
-        </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="initiatives.html">Green Initiatives</a>
+        <a href="practices.html">Good Practices</a>
+        <a href="contact.html">Contact</a>
       </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-small btn-ghost" href="contact.html">Get in touch</a>
+        <button class="menu-btn" type="button" aria-label="Open menu" data-open-drawer>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main id="main">
-    <section class="pageHero">
-      <div class="container pageHero__grid">
-        <div class="pageHero__copy reveal">
-          <p class="eyebrow">Green Climate Initiatives</p>
-          <h1 class="h1">Sustainability that strengthens supply.</h1>
-          <p class="lead">
-            We focus on reducing and offsetting our carbon footprint while supporting resilient, climate-smart farming
-            that benefits the environment and the community.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="contact.html">Partner with us</a>
-            <a class="btn btn--soft" href="practices.html">View farm practices</a>
-          </div>
-        </div>
+  <div class="drawer-backdrop" data-backdrop></div>
+  <aside class="drawer" data-drawer aria-label="Mobile menu">
+    <div class="drawer-header">
+      <strong>Menu</strong>
+      <button class="btn btn-small" type="button" data-close-drawer>Close</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="initiatives.html">Green Initiatives</a>
+      <a href="practices.html">Good Practices</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="pill">Sustainability • Quality • Community</div>
+    </div>
+  </aside>
 
-        <div class="pageHero__media reveal">
-          <div class="heroCard">
-            <img class="heroCard__img" src="mbeya-avocados-assets/growers-grove-bg.jpg" alt="Green avocado grove" />
-            <div class="heroCard__overlay"></div>
-            <div class="heroCard__bottom">
-              <p class="heroCard__title">Climate-smart farms</p>
-              <p class="heroCard__sub">Long-term quality and resilience.</p>
-            </div>
+  <!-- Hero (initiatives-themed) -->
+  <section class="hero">
+    <div class="hero-bg" style="background:
+      linear-gradient(180deg, rgba(6,10,7,.35) 0%, rgba(6,10,7,.85) 70%, rgba(6,10,7,1) 100%),
+      url('mbeya-avocados-assets/growers-grove-bg.jpg') center/cover no-repeat;">
+    </div>
+    <div class="container hero-inner">
+      <div class="reveal">
+        <div class="kicker"><span class="dot"></span> Green Climate Initiatives</div>
+        <h1>Climate-smart actions that protect the land—and your supply.</h1>
+        <p class="lead">
+          Our approach is practical: reduce waste, improve soil and water stewardship, and strengthen farming resilience
+          so quality stays consistent season after season.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Partner with us</a>
+          <a class="btn" href="practices.html">See good practices</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="thumb">
+          <img src="mbeya-avocados-assets/3avos-leaves-min.png" alt="Green avocado leaves" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="meta-row">
+            <strong>Goal</strong>
+            <span>Lower footprint, higher quality</span>
+          </div>
+          <div class="meta-row">
+            <strong>Focus</strong>
+            <span>Soil • Water • Waste reduction</span>
+          </div>
+          <div class="meta-row">
+            <strong>Impact</strong>
+            <span>Better resilience for growers</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <main id="main">
     <section class="section">
       <div class="container">
-        <div class="sectionHead reveal">
-          <h2 class="h2">What we prioritize</h2>
-          <p class="muted">Real initiatives that improve outcomes for land, farmers, and buyers.</p>
+        <div class="section-head">
+          <div>
+            <h2>Our sustainability pillars</h2>
+            <p>Designed to be credible, easy to understand, and meaningful for customers and partners.</p>
+          </div>
         </div>
 
-        <div class="cards3">
+        <div class="grid grid-3">
           <article class="card reveal">
-            <h3 class="h3">Lower footprint operations</h3>
-            <p class="muted">Efficient planning and smarter handling to reduce waste and emissions.</p>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2c4 3 7 6 7 11a7 7 0 01-14 0c0-5 3-8 7-11z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 14c1.5 1.5 4.5 1.5 6 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Water stewardship</h3>
+            <p>Smarter water use protects the environment while supporting stable yields.</p>
           </article>
+
           <article class="card reveal">
-            <h3 class="h3">Soil and ecosystem care</h3>
-            <p class="muted">Protecting the health of the growing environment supports stable, premium output.</p>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 20c6-1 10-5 11-11 4 1 6 5 5 11-6 1-10 1-16 0z" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 16c2-3 4-5 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Soil health</h3>
+            <p>Healthy soil improves quality and helps farms withstand climate variability.</p>
           </article>
+
           <article class="card reveal">
-            <h3 class="h3">Community-first impact</h3>
-            <p class="muted">Sustainability includes livelihoods—supporting smallholder farmers and families.</p>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 7h16v10H4V7z" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 7V5h10v2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Waste reduction</h3>
+            <p>Better sorting and handling reduce post-harvest losses and maximize value.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--flush">
+    <section class="section-sm">
       <div class="container">
-        <div class="split reveal">
-          <div class="split__media">
-            <img class="roundedImg" src="mbeya-avocados-assets/laughing-kids-with-avos-min.jpg" alt="Community and social sustainability" />
+        <div class="grid grid-2">
+          <div class="media-card reveal">
+            <div class="media" style="background-image:url('mbeya-avocados-assets/laughing-kids-with-avos-min02.jpg'); height: 320px;"></div>
+            <div class="body">
+              <h3>Community-first growth</h3>
+              <p>We believe sustainability is also social—supporting growers and communities through reliable market access.</p>
+            </div>
           </div>
-          <div class="split__copy">
-            <h2 class="h2">Sustainability is also social</h2>
-            <p class="muted">
-              We believe climate initiatives must benefit people too. Our work connects growers and grower groups to markets,
-              enabling long-term development across the region.
-            </p>
-            <a class="btn btn--primary" href="contact.html">Discuss your needs</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section section--cta">
-      <div class="container cta reveal">
-        <div>
-          <h2 class="h2">Need sustainability details for your buyers?</h2>
-          <p class="muted">We can share initiative summaries and partnership options.</p>
-        </div>
-        <div class="cta__actions">
-          <a class="btn btn--primary" href="contact.html">Contact</a>
-          <button class="btn btn--soft" type="button" data-open-wa>WhatsApp chooser</button>
+          <div class="card reveal">
+            <h3>What partners can expect</h3>
+            <p style="margin:0; color:rgba(255,255,255,.72);">Clear communication, consistent standards, and a quality mindset.</p>
+            <div class="hr"></div>
+
+            <div class="list">
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2l3 7 7 .5-5.5 4.2 2 7.3L12 17l-6.5 4 2-7.3L2 9.5 9 9l3-7z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Credible standards</strong>
+                  <span>We focus on practices that are measurable and realistic for growers.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Better resilience</strong>
+                  <span>Farms become more stable—supporting more consistent supply.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 20V4h16v16H4z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M7 9h10M7 13h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Clear updates</strong>
+                  <span>Partners get transparent communication and quick responses.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-actions" style="margin-top:16px;">
+              <a class="btn btn-primary" href="contact.html">Start a conversation</a>
+              <a class="btn" href="about.html">About Mbeya Avocados</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <img class="footer__logo" src="mbeya-avocados-assets/Mbeya-Avocados-Footer-Logo04.svg" alt="Mbeya Avocados footer logo" />
-        <p class="muted">Green business, premium supply—rooted in Mbeya, Tanzania.</p>
-      </div>
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="mbeya-avocados-assets/Mbeya-Avocados-logo03.svg" alt="Mbeya Avocados logo">
+          <p>Premium avocados from Tanzania, built on quality, sustainability, and strong farmer partnerships.</p>
+        </div>
 
-      <div class="footer__col">
-        <h3 class="footer__title">Company</h3>
-        <a class="footer__link" href="about.html">About</a>
-        <a class="footer__link" href="initiatives.html">Climate Initiatives</a>
-        <a class="footer__link" href="practices.html">Practices</a>
-        <a class="footer__link" href="contact.html">Contact</a>
-      </div>
+        <div>
+          <h4>Contact info</h4>
+          <div class="contact-list">
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21s7-4.5 7-10a7 7 0 10-14 0c0 5.5 7 10 7 10z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div><strong>Rungwe, Mbeya.</strong><small>Tanzania</small></div>
+            </div>
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="2"/>
+                <path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div><strong>Email</strong><small><a href="mailto:info@mbeyaavocados.co.tz">info@mbeyaavocados.co.tz</a></small></div>
+            </div>
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 2h6l2 5-2 2c1.5 3 3.9 5.4 6.9 6.9l2-2 5 2v6c-9.4 0-17-7.6-17-17z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>WhatsApp / Phone</strong>
+                <small><a href="https://wa.me/12698613487" target="_blank" rel="noopener">+1 (269) 861-3487</a></small>
+                <small><a href="https://wa.me/255754763558" target="_blank" rel="noopener">+255 754 763 558</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="footer__col">
-        <h3 class="footer__title">Contact</h3>
-        <div class="footer__contact">
-          <div class="footer__contactItem">📍 Rungwe, Mbeya, Tanzania</div>
-          <div class="footer__contactItem">✉️ <a href="mailto:info@mbeyaavocados.co.tz">info@mbeyaavocados.co.tz</a></div>
-          <div class="footer__contactItem">💬 <a href="https://wa.me/255754763558" target="_blank" rel="noopener">WhatsApp TZ</a></div>
-          <div class="footer__contactItem">💬 <a href="https://wa.me/12698613487" target="_blank" rel="noopener">WhatsApp US</a></div>
+        <div>
+          <h4>Social</h4>
+          <div class="social-row">
+            <a class="social-btn" href="https://www.instagram.com/mbeyaavocados?igsh=cnB3bDJvZmcyeGNz" target="_blank" rel="noopener">Instagram</a>
+            <a class="social-btn" href="https://tz.linkedin.com/company/mbeya-avacados-company-limited" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="social-btn" style="opacity:.65; cursor:not-allowed;">Facebook (soon)</span>
+            <span class="social-btn" style="opacity:.65; cursor:not-allowed;">X (soon)</span>
+          </div>
+          <div style="margin-top:14px;">
+            <a class="btn btn-primary" href="contact.html">Request a callback</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container footer__bottom">
-      <p class="muted">© <span id="year"></span> Mbeya Avocados. All rights reserved.</p>
-      <a class="to-top" href="#top">Back to top ↑</a>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Mbeya Avocados. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,.55);">Sustainability-led growth</span>
     </div>
   </footer>
 
-  <div class="stickyCta" aria-label="Quick actions">
-    <a class="stickyCta__btn" href="mailto:info@mbeyaavocados.co.tz"><span class="stickyCta__icon" aria-hidden="true">✉️</span>Email</a>
-    <button class="stickyCta__btn" type="button" data-open-wa><span class="stickyCta__icon" aria-hidden="true">💬</span>WhatsApp</button>
-    <a class="stickyCta__btn" href="contact.html"><span class="stickyCta__icon" aria-hidden="true">📍</span>Contact</a>
-  </div>
-
-  <div class="modal" id="waModal" aria-hidden="true" role="dialog" aria-label="Choose WhatsApp number">
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__panel" role="document">
-      <div class="modal__head">
-        <h3 class="modal__title">Send WhatsApp message</h3>
-        <button class="modal__close" type="button" data-close-modal aria-label="Close">×</button>
-      </div>
-      <p class="muted">Choose the number you prefer. We’ll open WhatsApp with a pre-filled message.</p>
-      <div class="modal__actions">
-        <button class="btn btn--soft" type="button" data-wa-choice="tz">WhatsApp TZ</button>
-        <button class="btn btn--soft" type="button" data-wa-choice="us">WhatsApp US</button>
-      </div>
-    </div>
-  </div>
-
   <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
