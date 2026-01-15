@@ -560,3 +560,13 @@ input:focus, textarea:focus, select:focus{
     display: none;
   }
 }
+/* INDEX CTA – make compact pill-style on mobile */
+@media (max-width: 640px){
+  .media-card .media[style*="bg-branch"]{
+    height: 140px !important;
+  }
+
+  .media-card .body{
+    padding: 14px;
+  }
+}
