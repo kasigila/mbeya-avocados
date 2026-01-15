@@ -182,7 +182,21 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") setModal(false);
   });
-
+// WhatsApp chooser
+document.querySelectorAll("[data-open-wa]").forEach(btn=>{
+  btn.onclick=()=>document.getElementById("waModal").classList.add("open");
+});
+document.querySelectorAll("[data-wa-choice]").forEach(btn=>{
+  btn.onclick=()=>{
+    const msg=encodeURIComponent("Hello Mbeya Avocados, I’m interested in avocados.");
+    const num=btn.dataset.waChoice==="tz"?"255754763558":"12698613487";
+    window.open(`https://wa.me/${num}?text=${msg}`,"_blank");
+  }
+});
+document.querySelectorAll("[data-close-modal]").forEach(btn=>{
+  btn.onclick=()=>document.getElementById("waModal").classList.remove("open");
+});
+  
   // Modal choice opens WhatsApp with either:
   // - form message if filled
   // - fallback simple message
